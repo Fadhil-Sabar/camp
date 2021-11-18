@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="electricEngine" class="com.enigma.engine.ElectricEngine"/>
+    <bean id="gasolineEngine" class="com.enigma.engine.GasolinEngine"/>
+    <bean id="dieselEngine" class="com.enigma.engine.DieselEngine"/>
+
+    <bean id="myCar" class="com.enigma.Car">
+        <constructor-arg name="fuel" value="10"/>
+        <constructor-arg name="engine" value="dieselEngine"/>
+
+    </bean>
+
+</beans>

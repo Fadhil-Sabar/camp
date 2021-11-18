@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h2>Home page</h2>
+<form action="/query-product" method="post">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" value="John"><br>
+    <label for="price">Price</label><br>
+    <input type="text" id="price" name="price" value="Doe"><br><br>
+    <label for="stock">Stock</label><br>
+    <input type="text" id="stock" name="stock" value="Doe"><br><br>
+    <label for="rating">Rating</label><br>
+    <input type="text" id="rating" name="rating" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<form action="/query-find-product">
+    <label for="id">Id</label><br>
+    <input type="text" id="id" name="id" value="1"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<form action="/query-delete" method="post">
+    <label for="id">Id</label><br>
+    <input type="text" id="id" name="id" value="Delete id"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<a href="/hello">Fin</a>
+</body>
+</html>
